@@ -1,7 +1,25 @@
-# rush-hour
-UC Berkeley Extension Full Stack Web Development Program 2017: Group Project #2
-
 # Rush Hour
-## Simplify the way your business schedules by automating the process from A-Z!
+## Simplify the way your business schedules appointments by automating the process!
 
 ### Table of Contents
+1. Dependencies
+2. Description
+3. Use
+4. Credits
+
+
+### Dependencies
+* Node
+* Express
+* Sequelize
+
+### Description
+* Automatically update your busy schedule by finding availablity and inserting clients into only those available slots. All of the work is done for you so there is no fear of double-booking!
+
+### Use
+
+### Credits (In no particular order!)
+### * Joyce
+### * Nate
+### * Tho
+### * George

@@ -1,12 +1,76 @@
+/*body {
+  background: linear-gradient(-90deg, purple, grey);
+}*/
+
 .navbar {
    background-color: transparent;
    background: transparent;
    border-color: transparent;
 }
 
-.navbar li { color: #000 } 
-
-.navbar-brand li {
-  color: black;
+.navbar-default .navbar-nav>li>a {
+    color: #777;
+    font-size: 18px;
+    text-shadow: 1.5px 1.5px white;
+    font-weight: 900;
+    text-transform: uppercase;
+    font-family: 'Open Sans', sans-serif;
 }
+
+.navbar-default .navbar-brand {
+    color: #777;
+    font-size: 21px;
+    text-shadow: 2px 2px black;
+    font-weight: 900;
+    text-transform: uppercase;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.btn {
+    position: fixed;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 50px;
+    width: 100px; 
+    height: 30px; 
+    background-color: #fff;
+    border-radius: 300px;
+    white-space: nowrap;
+    font-weight: 700;
+    font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
+    vertical-align: middle;
+    display: inline-block;
+    text-align: center;
+}
+
+.heading-one {
+  position: fixed;
+  margin: auto;
+  left: 0;
+  right: 0;
+  top:150px;
+  bottom: 0px;
+  color: white;
+  text-align: center;
+  font-weight: 300;
+  font-family: 'Just Another Hand';
+  font-size: 84px;
+}
+
+.heading-two {
+  position: fixed;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 250px;
+    bottom: 0px;
+  color: white;
+  text-align: center;
+  font-weight: 300;
+  font-family: 'Just Another Hand', cursive;
+  font-size: 42px;
+}
+
 

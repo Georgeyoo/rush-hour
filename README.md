@@ -3,23 +3,25 @@
 
 ### Table of Contents
 1. Dependencies
-2. Description
-3. Use
-4. Credits
+2. Technologies
+3. Description
+4. Use
+5. Credits
 
 
-### Dependencies
+### 1. Dependencies
 * Node
 * Express
 * Sequelize
 
-### Description
+### 2. Technologies
+* Bootstrap
+* 
+
+### 3. Description
 * Automatically update your busy schedule by finding availablity and inserting clients into only those available slots. All of the work is done for you so there is no fear of double-booking!
 
-### Use
+### 4. Use
 
-### Credits (In no particular order!)
-### * Joyce
-### * Nate
-### * Tho
-### * George
+### 5. Credits (In no particular order!)
+#### * Joyce * Nate * Tho * George

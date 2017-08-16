@@ -4,9 +4,14 @@
    border-color: transparent;
 }
 
-.navbar li { color: #000 } 
-
-.navbar-brand li {
-  color: black;
+.navbar-default .navbar-nav>li>a {
+    color: #777;
+    font-size: 18px;
+    text-shadow: 1px 1px black;
 }
 
+.navbar-default .navbar-brand {
+    color: #777;
+    font-size: 21px;
+    text-shadow: 2px 2px black;
+}

@@ -19,6 +19,7 @@
   "homepage": "https://github.com/Georgeyoo/rush-hour#readme",
   "dependencies": {
     "express": "^4.15.4",
+    "mysql2": "^1.4.1",
     "sequelize": "^4.5.0"
   }
 }

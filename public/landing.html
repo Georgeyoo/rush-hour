@@ -28,25 +28,46 @@
 </head>
 
 <body>
+
+<!-- Bootstrap Navbar -->
 <nav class="navbar navbar-default">
   <div class="container-fluid">
+
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
       <a class="navbar-brand nav-text" href="#">Rush Hour</a>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
-      <ul class="nav navbar-nav navbar-right">
-        <li><a class="nav-text" href="#">Login</a></li>
-		<li><a class="nav-text" href="#">Register</a></li>
+      <ul class="nav navbar-nav navbar-right shadow">
+        <li>
+        	<a class="nav-login" href="#">Login</a>
+        </li>
+	  </ul>
+	  
+	  <ul class="nav navbar-nav navbar-right shadow">
+		<li>
+			<a class="nav-register" href="#">Register</a>
+		</li>
       </ul>
-    </div><!-- /.navbar-collapse -->
-  </div><!-- /.container-fluid -->
+    </div>
+  </div>
 </nav>
-	<h1 class="heading-one"> Automate your busy schedule! </h1>
-	<h4 class="heading-two"> Sit back and let technology take over >:D </h4>
-	<a class="btn btn-default btn-xxl sr-button" href="#services">Schedule!</a>
-	
+
+<!-- Landing Page Text -->
+<h1 class="heading-one"> Automate your busy schedule! </h1>
+
+<h4 class="heading-two"> Sit back and let technology take over >:D </h4>
+
+
+<!-- Landing Page Button: Schedule -->
+<a class="btn btn-default btn-xxl sr-button" id="schedule-button" href="#services">Schedule   <span class="glyphicon glyphicon-calendar" aria-hidden="true"></span></a>
+
+
+<!-- Landing Page Button: Call -->
+<a class="btn btn-default btn-xxl sr-button" id="call-button" href="#services">Call  <span class="glyphicon glyphicon-earphone" aria-hidden="true"></span></a>
+
+
 	<!-- Link to landing.js -->
 	<script type="text/javascript" src="js/landing.js"></script>
 

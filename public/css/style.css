@@ -9,12 +9,14 @@
 }
 
 .navbar-default .navbar-nav>li>a {
-    color: #777;
+    /*color: #777;*/
+    color: white;
     font-size: 18px;
-    text-shadow: 1.5px 1.5px white;
+    text-shadow: 1.5px 1.5px black;
     font-weight: 900;
     text-transform: uppercase;
     font-family: 'Open Sans', sans-serif;
+    margin-right: 10px;
 }
 
 .navbar-default .navbar-brand {
@@ -24,12 +26,58 @@
     font-weight: 900;
     text-transform: uppercase;
     font-family: 'Open Sans', sans-serif;
+    text-align: center;
+}
+
+/*.shadow {
+  width: 90px;
+  height: 50px;
+  background-color: black;
+  opacity: .5;
+}*/
+
+.nav-login {
+  width: 90px;
+  height: 50px;
+  background-color: black;
+  opacity: .5;
+}
+
+.nav-register {
+  width: 115px;
+  height: 50px;
+  background-color: black;
+  opacity: .5;
 }
 
 .btn {
+  /*font-size: 24px;*/
+  padding: 25px, 25px , 25px, 25px;
+}
+
+#schedule-button {
     position: fixed;
     margin: auto;
     left: 0;
+    right: 120px;
+    top: 0;
+    bottom: 50px;
+    width: 100px; 
+    height: 30px; 
+    background-color: #fff;
+    border-radius: 300px;
+    white-space: nowrap;
+    font-weight: 700;
+    font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
+    vertical-align: middle;
+    display: inline-block;
+    text-align: center;
+}
+
+#call-button {
+    position: fixed;
+    margin: auto;
+    left: 120px;
     right: 0;
     top: 0;
     bottom: 50px;
@@ -44,6 +92,7 @@
     display: inline-block;
     text-align: center;
 }
+
 
 .heading-one {
   position: fixed;
@@ -61,11 +110,11 @@
 
 .heading-two {
   position: fixed;
-    margin: auto;
-    left: 0;
-    right: 0;
-    top: 250px;
-    bottom: 0px;
+  margin: auto;
+  left: 0;
+  right: 0;
+  top: 250px;
+  bottom: 0px;
   color: white;
   text-align: center;
   font-weight: 300;

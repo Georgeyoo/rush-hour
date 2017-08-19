@@ -13,8 +13,8 @@
 	<!-- Bootstrap CDN -->
 	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
-	<!--Import materialize.css-->
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/css/materialize.min.css">
+	<!-- Import jQuery before materialize.js -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/css/materialize.min.css">
 
 	<!-- jQuery Backstretch CDN -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-backstretch/2.0.4/jquery.backstretch.min.js"></script>
@@ -42,9 +42,12 @@
 
 <body>
 
+<main> 
+
 <!-- Bootstrap Navbar -->
-<nav class="navbar navbar-default">
-  <div class="container-fluid">
+<nav> 
+	<div class="navbar navbar-default nav-wrapper">
+  		<div class="container-fluid">
 
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
@@ -54,7 +57,7 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
       <ul class="nav navbar-nav navbar-right shadow">
         <li>
-        	<a class="nav-login" href="#">Login</a>
+        	<a id="login" class="waves-effect waves-light btn modal-trigger nav-login" href="#modal1">Login</a>
         </li>
 	  </ul>
 	  
@@ -65,12 +68,36 @@
       </ul>
     </div>
   </div>
+  </div>
 </nav>
+
+<!-- Modal1  Structure Login-->
+  <div id="modal1" class="modal">
+    <div class="modal-content">
+      <form>
+        <div class="input-field">
+          <i class="material-icons prefix">email</i>
+          <input id="icon_prefix" type="text" class="validate">
+         <!--  <input type="email" id="email" class="validate"> -->
+          <label class="active" for="icon_prefix">Email</label>
+        </div>
+
+       <div class="input-field ">
+          <input id="password" type="password" class="validate">
+          <label for="password">Password</label>
+        </div>
+      </form>
+    </div>
+    <div class="modal-footer">
+      <a href="#" id="login" class="modal-action modal-close waves-effect waves-green btn-flat">login</a>
+    </div>
+  </div>
 
 <!-- Landing Page Text -->
 <h1 class="heading-one"> Automate your busy schedule! </h1>
 
 <h4 class="heading-two"> Sit back and let technology take over >:D </h4>
+
 
 
 <!-- Landing Page Button: Schedule -->
@@ -81,6 +108,8 @@
 <a class="btn btn-default btn-xxl sr-button" id="call-button" href="#services">Call  <span class="glyphicon glyphicon-earphone" aria-hidden="true"></span></a>
 
 
+</main>
+
 	<!-- Link to landing.js -->
 	<script type="text/javascript" src="js/landing.js"></script>
 
@@ -89,4 +118,27 @@
 	
 
 </body>
+
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/js/materialize.min.js"></script>
+
+<!-- MUST HAVE for modals -->
+<script type="text/javascript">
+    // Required for use of modal
+	$('.modal').modal({
+	  	dismissible: true, // Modal can be dismissed by clicking outside of the modal
+	  	opacity: .5, // Opacity of modal background
+	  	inDuration: 300, // Transition in duration
+	  	outDuration: 200, // Transition out duration
+	  	startingTop: '4%', // Starting top style attribute
+	  	endingTop: '10%', // Ending top style attribute
+	  	ready: function(modal, trigger) { // Callback for Modal open. Modal and trigger parameters available.
+	    // alert("Ready");
+	    // console.log(modal, trigger);
+	},
+	  // complete: function() { alert('Closed'); } // Callback for Modal close
+});
+
+</script>
+
 </html>

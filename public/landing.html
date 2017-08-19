@@ -59,13 +59,16 @@
         <li>
         	<a id="login" class="waves-effect waves-light btn modal-trigger nav-login" href="#modal1">Login</a>
         </li>
+        <li>
+        	<a id="register" class="waves-effect waves-light btn modal-trigger nav-login" href="#modal2">Register</a>
+        </li>
 	  </ul>
 	  
-	  <ul class="nav navbar-nav navbar-right shadow">
+<!-- 	  <ul class="nav navbar-nav navbar-right shadow">
 		<li>
 			<a class="nav-register" href="#">Register</a>
 		</li>
-      </ul>
+      </ul> -->
     </div>
   </div>
   </div>
@@ -93,6 +96,42 @@
     </div>
   </div>
 
+<!-- Modal2  Structure Register-->
+<div id="modal2" class="modal">
+  <div class="modal-content">
+    <form>
+      <div class="input-field">
+        <i class="material-icons prefix">account_circle</i>
+        <input id="icon_prefix" type="text" class="validate">
+       <!--  <input type="text" id="name"> -->
+        <label class="active" for="icon_prefix">Username</label>
+      </div>
+
+     <div class="input-field">
+        <i class="material-icons prefix">email</i>
+        <input id="icon_prefix" type="text" class="validate">
+         <!--  <input type="email" id="email" class="validate"> -->
+        <label class="active" for="icon_prefix">Email</label>
+      </div>
+
+     <div class="input-field ">
+        <input id="password" type="password" class="validate">
+        <label for="password text-white">Password</label>
+      </div>
+
+     <div class="input-field">
+        <i class="material-icons prefix">phone</i>
+        <input id="icon_telephone" type="tel" class="validate">
+        <label for="icon_telephone" id="Telephone">Telephone</label>
+      </div>
+
+   </form>
+    <div class="modal-footer">
+      <a href="#" id="login" class="modal-action modal-close waves-effect waves-green btn-flat">Register</a>
+    </div>
+  </div> 
+</div>
+
 <!-- Landing Page Text -->
 <h1 class="heading-one"> Automate your busy schedule! </h1>
 
@@ -110,6 +149,34 @@
 
 </main>
 
+<footer class="page-footer teal accent-4">
+    <div class="container teal accent-4">
+      <div class="row">
+        <div class="col l6 s12">
+          <h9 class="white-text">Rush Hour</h9>
+            <p class="grey-text text-lighten-4">Automate your busy schedule!</p>
+        </div>
+        <div class="col l4 offset-l2 s12">
+          <h5 class="white-text">Links</h5>
+            <ul>
+              <li class="fa fa-github" aria-hidden="true"><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
+              <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
+              <li><a class="grey-text text-lighten-3" href="
+              <i class="fa fa-github" aria-hidden="true"></i>
+            </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright teal">
+      <div class="container">
+        © 2017 Copyright
+        <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+      </div>
+    </div>
+</footer>
+
+</body>
+
 	<!-- Link to landing.js -->
 	<script type="text/javascript" src="js/landing.js"></script>
 
@@ -117,7 +184,7 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-backstretch/2.0.4/jquery.backstretch.min.js"></script>
 	
 
-</body>
+
 
 	<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/js/materialize.min.js"></script>
@@ -140,5 +207,12 @@
 });
 
 </script>
+
+<!-- MOBILE COLLAPSE -->
+    <script type="text/javascript" src="js/landing.js"></script>
+
+ <!-- jQuery Backstretch CDN -->
+
+    <script> $(".button-collapse").sideNav();</script>
 
 </html>
